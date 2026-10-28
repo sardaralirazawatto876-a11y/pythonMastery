@@ -1,0 +1,4 @@
+morning_students = {"Ali", "Sara", "Ahmed"}
+evening_students = {"Sara", "Usman", "Ali"}
+all_languages = morning_students.intersection(evening_students)
+print(all_languages)
