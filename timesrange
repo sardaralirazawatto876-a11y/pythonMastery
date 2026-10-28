@@ -1,0 +1,2 @@
+for i in range(int(input("Enter the numbers of times you want to print:"))):
+    print("Ali is a good boy:")

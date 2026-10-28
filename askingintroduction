@@ -1,0 +1,4 @@
+name = input("Enter your name:")
+marks = int(input("Enter your marks:"))
+print(name, marks)
+print(name + " obtained " + str(marks) + " marks in the exam")

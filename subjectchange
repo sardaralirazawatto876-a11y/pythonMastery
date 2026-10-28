@@ -1,0 +1,5 @@
+subjects = ["python", "java", "javascript"]
+print(subjects[0])
+subjects[2] = "English"
+subjects.append("C++")
+print(subjects)
