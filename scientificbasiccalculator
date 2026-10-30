@@ -1,0 +1,41 @@
+import math
+
+num1 = float(input("Enter first number: "))
+operator = input(
+    "Enter operation (+, -, *, /, power, square_root, sine, cosine, tangent): "
+).lower()
+
+if operator == "square_root":
+    if num1 < 0:
+        print("Error: Negative number has no real square root.")
+    else:
+        print("Result:", math.sqrt(num1))
+
+elif operator in ("sine", "cosine", "tangent"):
+    angle = math.radians(num1)
+
+    if operator == "sine":
+        print("Result:", math.sin(angle))
+    elif operator == "cosine":
+        print("Result:", math.cos(angle))
+    else:
+        print("Result:", math.tan(angle))
+
+else:
+    num2 = float(input("Enter second number: "))
+
+    if operator == "+":
+        print("Result:", num1 + num2)
+    elif operator == "-":
+        print("Result:", num1 - num2)
+    elif operator == "*":
+        print("Result:", num1 * num2)
+    elif operator == "/":
+        if num2 == 0:
+            print("Error: Cannot divide by zero.")
+        else:
+            print("Result:", num1 / num2)
+    elif operator == "power":
+        print("Result:", math.pow(num1, num2))
+    else:
+        print("Invalid operation!")
