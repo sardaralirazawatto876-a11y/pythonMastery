@@ -17,3 +17,9 @@ A fully functional command-line scientific calculator built using Python's nativ
 ## Contact & Connect
 * **Developer:** Ali Raza Asghar
 * **Focus:** Software Engineering & Core Programming
+Ultimate Python Programing Master list
+  Phase1:Begninners console and utility programs
+  1.Simple Calculator
+  2.Scientific Calculator
+  3.Even/Odd/Positve/Negative Number Checker
+  4.Multiplication Table Genrator
