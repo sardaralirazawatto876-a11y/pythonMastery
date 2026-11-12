@@ -1,0 +1,5 @@
+number = int(input("Enter your number:"))
+limit =int(input("Enter your Table Limit:"))
+for i in range(1,limit+1):
+    Total = number * i
+    print( number,"x",i,"=",Total)
