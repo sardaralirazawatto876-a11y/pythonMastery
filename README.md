@@ -24,4 +24,5 @@ Ultimate Python Programing Master list
   3.Even/Odd/Positve/Negative Number Checker
   4.Multiplication Table Genrator
   5.Temprature converter
+  6.program6(basic-curruncy-converter)
   
