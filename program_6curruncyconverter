@@ -1,0 +1,4 @@
+amount = float(input("Enter your amount:"))
+rate = float(input("Enter your exchange rate:"))
+converted = amount*rate
+print("Converted:", converted)
