@@ -1,0 +1,72 @@
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+current_player = "X"
+
+print("===== TIC-TAC-TOE =====")
+
+while True:
+
+    print()
+    print(board[0], "|", board[1], "|", board[2])
+    print("--+---+--")
+    print(board[3], "|", board[4], "|", board[5])
+    print("--+---+--")
+    print(board[6], "|", board[7], "|", board[8])
+
+    print("\nPlayer", current_player)
+
+    position = int(input("Choose a position (1-9): "))
+
+    if position < 1 or position > 9:
+        print("Invalid position!")
+        continue
+
+    index = position - 1
+
+    if board[index] != " ":
+        print("Position already occupied!")
+        continue
+
+    board[index] = current_player
+
+    winning_combinations = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ]
+
+    winner = False
+
+    for combination in winning_combinations:
+        if (board[combination[0]] == current_player and
+            board[combination[1]] == current_player and
+            board[combination[2]] == current_player):
+
+            winner = True
+            break
+
+    if winner:
+        print()
+        print(board[0], "|", board[1], "|", board[2])
+        print("--+---+--")
+        print(board[3], "|", board[4], "|", board[5])
+        print("--+---+--")
+        print(board[6], "|", board[7], "|", board[8])
+
+        print("Player", current_player, "wins!")
+        break
+
+    if " " not in board:
+        print("It's a draw!")
+        break
+
+    if current_player == "X":
+        current_player = "O"
+    else:
+        current_player = "X"
