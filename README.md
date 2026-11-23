@@ -25,4 +25,8 @@ A fully functional command-line scientific calculator built using Python's nativ
  # 4.Multiplication Table Genrator
  # 5.Temprature converter
  # 6.program6(basic-curruncy-converter)
+# 7. number_guessing_game.py
+# 8.program6(Multi-curruncy-converter)
+# 9.rock_paper_scissors.py
+# 10.tic_tac_toe_game
   
